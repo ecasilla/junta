@@ -35,5 +35,5 @@ then
      * unit
        * user_crud_spec.js
        * user_service_spec.js
-  * setup.js
+   * setup.js
   
