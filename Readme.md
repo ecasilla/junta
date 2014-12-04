@@ -1,5 +1,7 @@
 #Junta Code Challenge
 
+[![Build Status](https://travis-ci.org/ecasilla/junta.svg?branch=master)](https://travis-ci.org/ecasilla/junta)
+
 ##Install 
 In your Terminal paste the following two commands
 
