@@ -2,29 +2,29 @@
 
 module.exports = function (grunt) {
 	grunt.initConfig({
-  pkg: grunt.file.readJSON('package.json'),
-  banner: '/*! \n * <%= pkg.title || pkg.name %> v<%= pkg.version %>\n' +
-    ' * <%= pkg.homepage %>\n' +
-    ' * Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
-    ' * License: <%= pkg.license %>\n' +
-    ' */\n',
+		pkg: grunt.file.readJSON('package.json'),
+		banner: '/*! \n * <%= pkg.title || pkg.name %> v<%= pkg.version %>\n' +
+			' * <%= pkg.homepage %>\n' +
+			' * Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
+			' * License: <%= pkg.license %>\n' +
+			' */\n',
 		jsbeautifier: {
 			files: ['<%= jshint.all %>'],
 			options: {
 				config: '.jsbeautify'
 			}
 		},
-    usebanner: {
-      dist: {
-        options: {
-          position: 'top',
-          banner: '<%= banner %>'
-        },
-        files: {
-          src: ['lib/**/*.js','Gruntfile.js']
-        }
-      }
-    },
+		usebanner: {
+			dist: {
+				options: {
+					position: 'top',
+					banner: '<%= banner %>'
+				},
+				files: {
+					src: ['lib/**/*.js', 'Gruntfile.js']
+				}
+			}
+		},
 		simplemocha: {
 			options: {
 				globals: ['expect', 'navigator'],
@@ -40,7 +40,7 @@ module.exports = function (grunt) {
 		jshint: {
 			options: {
 				jshintrc: '.jshintrc',
-        reporter: require('jshint-stylish')
+				reporter: require('jshint-stylish')
 			},
 			all: [
 				'Gruntfile.js',
@@ -54,8 +54,8 @@ module.exports = function (grunt) {
 			dist: {
 				src: ['lib/**/*.js'],
 				options: {
-          template : "node_modules/grunt-jsdoc/node_modules/ink-docstrap/template",
-          configure : "jsdoc.conf.json",
+					template: "node_modules/grunt-jsdoc/node_modules/ink-docstrap/template",
+					configure: "jsdoc.conf.json",
 					destination: 'doc/html'
 				}
 			}
@@ -80,5 +80,5 @@ module.exports = function (grunt) {
 	grunt.registerTask('doc', 'jsdoc');
 	grunt.registerTask('test', 'simplemocha');
 	grunt.registerTask('lint', 'jshint');
-	grunt.registerTask('default', ['lint', 'doc', 'test']);
+	grunt.registerTask('default', ['lint', 'jsbeautifier', 'doc', 'test']);
 };

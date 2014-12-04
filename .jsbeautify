@@ -1,4 +1,4 @@
-  "js": {
+ {
     "braceStyle": "end-expand",
     "breakChainedMethods": false,
     "e4x": false,
@@ -16,5 +16,5 @@
     "spaceInParen": false,
     "unescapeStrings": false,
     "wrapLineLength": 0
-  }
+  
 }

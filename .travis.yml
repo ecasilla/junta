@@ -19,6 +19,5 @@ notifications:
 branches:
   only:
     - master
-    - devel
 git:
   submodules: false  
