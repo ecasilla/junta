@@ -1,0 +1,37 @@
+Please write a module: 'userService' that will accomplish the following tasks below:
+1) use async.waterfall() (from: https://www.npmjs.org/package/async )
+2) execute the following tasks in updateUserTimestamp(), follow the order below, while handling and logging errors along the way:
+   - retrieve a user object from datastore by user.id
+   - update the user.timestamp to contain current time ( seconds since epoch, no decimals )
+   - save the user object back.
+3) use: 'use strict'
+4) log errors/messages using console.*
+5) document as much as possible
+6) create a mocha unit test. BDD style to call userService.updateUserTimestamp() below:
+7)  bonus: for above unit test, stub out a userCrudService.
+
+References:
+
+module: 'userService'
+
+/***
+ * userId, userId to retreive user by
+ * callback: fn that has the following signature: err, user (instance of user object)
+*/
+updateUserTimestamp(userId, callback)
+
+existing module (don't need to write, just use it): 'userCrudService'
+
+/***
+ * Retrieve the user from a data store
+ * userId - user.id to retrieve a user by
+ * callback - fn that will be called with the following params: err, user (instance of user object)
+*/
+get(userId, callback)
+
+/***
+ * Save the user to a data store
+ * callback = a function that will be called upon completion with the following signature = err, roomObject
+*/
+save(user, callback)
+
