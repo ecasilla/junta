@@ -18,8 +18,7 @@ describe('The User Factory: ', function () {
 
 		it('should return an error if not found', function (done) {
 			factory.get(10, function (err, usr) {
-				var error = err;
-				expect(error).to.be.an.instanceof(Error);
+				expect(err).to.be.an.instanceof(Error);
 				done();
 			});
 		});
