@@ -1,5 +1,14 @@
 #Junta Code Challenge
 
+##Install 
+In your Terminal paste the following two commands
+
+`git clone git@github.com:ecasilla/junta.git`
+
+then
+
+`sudo npm i`
+
 ##Scripts
 
 ###Testing
@@ -24,5 +33,5 @@
      * unit
        * user_crud_spec.js
        * user_service_spec.js
-    * setup.js
+ * setup.js
   
