@@ -6,7 +6,7 @@
     "indentChar": " ",
     "indentLevel": 0,
     "indentSize": 2,
-    "indentWithTabs": true,
+    "indentWithTabs": false,
     "jslintHappy": true,
     "keepArrayIndentation": false,
     "keepFunctionIndentation": false,

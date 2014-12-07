@@ -1,38 +1,38 @@
 {
-	"name": "junta-code-challenge",
-	"version": "0.0.1",
-	"description": "Async Code Challenge",
-	"engines": {
-		"node": "0.10.x"
-	},
-	"scripts": {
-		"start": "node lib/user_service.js",
-		"test": "mocha --recursive"
-	},
-	"author": "Ernie Casilla",
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/ecasilla/junta"
-	},
-	"bugs": {
-		"url": "https://github.com/ecasilla/junta/issues",
-		"email": "ecasilla@icloud.com"
-	},
-	"dependencies": {
-		"async": "^0.9.0"
-	},
-	"devDependencies": {
-		"chai": "^1.10.0",
-		"grunt": "^0.4.5",
-		"grunt-banner": "^0.2.3",
-		"grunt-contrib-jshint": "^0.10.0",
-		"grunt-contrib-watch": "^0.6.1",
-		"grunt-jsbeautifier": "^0.2.7",
-		"grunt-jsdoc": "^0.5.7",
-		"grunt-newer": "^0.8.0",
-		"grunt-simple-mocha": "^0.4.0",
-		"jshint-stylish": "^1.0.0",
-		"mocha": "^2.0.1"
-	}
+  "name": "junta-code-challenge",
+  "version": "0.0.1",
+  "description": "Async Code Challenge",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "scripts": {
+    "start": "node lib/user_service.js",
+    "test": "mocha --recursive"
+  },
+  "author": "Ernie Casilla",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ecasilla/junta"
+  },
+  "bugs": {
+    "url": "https://github.com/ecasilla/junta/issues",
+    "email": "ecasilla@icloud.com"
+  },
+  "dependencies": {
+    "async": "^0.9.0"
+  },
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "grunt": "^0.4.5",
+    "grunt-banner": "^0.2.3",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jsbeautifier": "^0.2.7",
+    "grunt-jsdoc": "^0.5.7",
+    "grunt-newer": "^0.8.0",
+    "grunt-simple-mocha": "^0.4.0",
+    "jshint-stylish": "^1.0.0",
+    "mocha": "^2.0.1"
+  }
 }
